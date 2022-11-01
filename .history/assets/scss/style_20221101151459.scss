@@ -1,0 +1,54 @@
+@import './bases/variables';
+
+.header {
+    .header-nav {
+        background-color: #000;
+        color: #fff;
+        .nav-items {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                padding: 5px;
+            }
+        }
+    }
+    .menu {
+        .menu-items {
+            a {
+                color: #000;
+                margin-right: 15px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    border: 1px solid #f8b653;
+                    width: 100%;
+                    transition: all 0.2s ease-in-out;
+                    transform: scaleX(0);
+                }
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+            }
+            .active {
+                color: #f8b653;
+                // position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    border: 1px solid #f8b653;
+                    width: 100%;
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+}

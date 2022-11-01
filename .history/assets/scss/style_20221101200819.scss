@@ -1,0 +1,123 @@
+@import "./bases/variables";
+
+.header {
+  .header-nav {
+    .container {
+      background-color: #000;
+      color: #fff;
+      .nav-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          padding: 5px;
+        }
+      }
+    }
+  }
+  .menu {
+    .menu-items {
+      a {
+        color: #000;
+        margin-right: 15px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          border: 1px solid #f8b653;
+          width: 100%;
+          transition: all 0.2s ease-in-out;
+          transform: scaleX(0);
+        }
+        &:hover::after {
+          transform: scaleX(1);
+        }
+      }
+      .active {
+        color: #f8b653;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          border: 1px solid #f8b653;
+          width: 100%;
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
+
+.myCarousel {
+  .img-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+  }
+  .carousel-indicators {
+    bottom: 15%;
+    button {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 1px solid #b7b7b7;
+    }
+  }
+  .carousel-inner {
+    width: 1280px;
+    height: 400px;
+    .carousel-item {
+      position: relative;
+      .header-banner {
+        img {
+          margin-left: 86px;
+        }
+      }
+      h3 {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 48px;
+      }
+      p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .btn-header {
+        background-color: #f8b653;
+        padding: 10px 25px 10px 25px;
+        color: #fff;
+        border: none;
+      }
+    }
+  }
+}
+
+.product-feature {
+    .card {
+        width: 369px;
+        .card-header {
+            padding: 0;
+        }
+        .card-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0;
+            height: 64px;
+            button {
+                border: none;
+                background-color: #E1B067;
+            }
+        }
+    }
+}

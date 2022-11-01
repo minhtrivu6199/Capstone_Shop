@@ -1,0 +1,230 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+a:hover {
+  color: #F8B653 !important;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  padding: 0;
+}
+
+.header .header-nav {
+  background-color: #000;
+}
+.header .header-nav .container {
+  color: #fff;
+}
+.header .header-nav .container .nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-nav .container .nav-items a {
+  padding: 5px;
+}
+.header .menu .menu-items a {
+  color: #000;
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+}
+.header .menu .menu-items a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  border: 1px solid #f8b653;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  transform: scaleX(0);
+}
+.header .menu .menu-items a:hover::after {
+  transform: scaleX(1);
+}
+.header .menu .menu-items .active {
+  color: #f8b653;
+}
+.header .menu .menu-items .active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  border: 1px solid #f8b653;
+  width: 100%;
+  transform: scaleX(1);
+}
+@media only screen and (max-width: 768px) {
+  .header .menu .menu-items a {
+    line-height: 12px;
+    font-size: 16px;
+  }
+}
+
+.myCarousel .img-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.myCarousel .img-footer img {
+  width: 100%;
+}
+.myCarousel .carousel-indicators {
+  bottom: 15%;
+}
+.myCarousel .carousel-indicators button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #b7b7b7;
+}
+.myCarousel .carousel-inner {
+  max-width: 1320px;
+  max-height: 400px;
+}
+.myCarousel .carousel-inner .carousel-item {
+  position: relative;
+}
+.myCarousel .carousel-inner .carousel-item .header-banner img {
+  margin-left: 86px;
+}
+.myCarousel .carousel-inner .carousel-item h3 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+}
+.myCarousel .carousel-inner .carousel-item p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+}
+.myCarousel .carousel-inner .carousel-item .btn-header {
+  background-color: #f8b653;
+  padding: 10px 25px 10px 25px;
+  color: #fff;
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  .myCarousel .carousel-inner {
+    width: 375px;
+    height: 300px;
+  }
+  .myCarousel .carousel-inner .carousel-item .header-banner img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0;
+  }
+  .myCarousel .carousel-inner .carousel-item h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .myCarousel .carousel-inner .carousel-item p {
+    font-size: 10px;
+    line-height: 24px;
+  }
+  .myCarousel .carousel-inner .carousel-item .btn-header {
+    background-color: #f8b653;
+    padding: 8px 12px 8px 12px;
+    color: #fff;
+    border: none;
+  }
+}
+
+.product-feature .card {
+  width: 369px;
+}
+.product-feature .card .card-header {
+  padding: 0;
+  position: relative;
+}
+.product-feature .card .card-header .title {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+}
+.product-feature .card .card-header .title .name {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+.product-feature .card .card-header .title .description {
+  color: #CBC9C9;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.product-feature .card .card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  height: 64px;
+}
+.product-feature .card .card-body a {
+  border: none;
+  background-color: #E1B067;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 29px;
+  color: #000;
+  padding-top: 15px;
+}
+.product-feature .card .card-body h5 {
+  padding-top: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  background-color: #DEDDDC;
+  margin: 0;
+}
+
+footer {
+  margin-top: 150px;
+}
+footer #footer_end {
+  background-color: rgba(181, 180, 180, 0.218);
+}
+footer ul {
+  margin-bottom: 40px;
+  border-left: 1px solid rgba(156, 156, 156, 0.186);
+}
+footer ul .title {
+  font-weight: 900;
+  font-size: 22px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer ul li a:hover {
+  color: #D017EE;
+}
+footer ul .specialLink {
+  color: rgb(215, 17, 17);
+}

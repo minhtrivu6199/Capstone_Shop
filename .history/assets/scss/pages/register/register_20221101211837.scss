@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.register-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+
+#register_info {
+    .input_container {
+
+        input,
+        input::placeholder {
+            width: 100%;
+            border: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 36px;
+            color: #000000;
+        }
+
+        span {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #F50E0E;
+        }
+    }
+
+
+}
+
+.input_decor {
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(rgba(174, 24, 226, 1), rgba(0, 0, 0, 0));
+}
+
+.gender {
+    ul li {
+        list-style: none;
+
+        input {
+            accent-color: rgba(174, 24, 226, 1);
+        }
+    }
+
+    span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+        color: #000000;
+    }
+
+    label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+        color: #000000;
+    }
+}
+
+#register_submit {
+    background: #AE18E2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    border: none;
+    color: #FFFCFC;
+    padding: 0px 80px;
+}
+
+.error_msg {
+    display: none;
+}
+
+header {
+    .nav-bot {
+        .nav-item {
+            margin-left: 20px;
+        }
+
+        .navbar-brand {
+            border-bottom: 2px solid black;
+        }
+    }
+
+    .nav_top {
+        background-color: #000000;
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin-left: 25px;
+
+            &:hover {
+                color: goldenrod
+            }
+        }
+
+        .container {
+            width: 95%;
+        }
+
+        img#logo {
+            width: 100px;
+        }
+    }
+
+    #user_quantity {
+        font-size: 20px;
+        color: white;
+    }
+}
+
+footer {
+    margin-top: 100px;
+
+    #footer_end {
+        background-color: rgba(181, 180, 180, 0.218);
+    }
+
+    ul {
+        margin-bottom: 40px;
+        border-left: 1px solid rgba(156, 156, 156, 0.186);
+
+        .title {
+            font-weight: 900;
+            font-size: 22px;
+        }
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color: #D017EE;
+                }
+            }
+
+
+        }
+
+        .specialLink {
+            color: rgb(215, 17, 17);
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer {
+        text-align: center;
+
+        ul {
+            border-left: none;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import './bases/variables';
+
+.header {
+    .header-nav {
+        background-color: #000;
+        color: #fff;
+        .nav-items {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                padding: 5px;
+                &:hover{
+                    color: #F8B653;
+                }
+            }
+        }
+    }
+}

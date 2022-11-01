@@ -1,0 +1,40 @@
+<div class="container">
+        <div id="slide">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-8">
+              <div class="header-banner">
+                <img id="banner-img1" src="./assets/img/image 4.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <h3 id="banner-name1">Product name</h3>
+              <p id="banner-description1">Product description</p>
+              <button class="btn-header">Buy now</button>
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-8">
+              <div class="header-banner">
+                <img id="banner-img2" src="./assets/img/image 4.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <h3 id="banner-name2">Product name</h3>
+              <p id="banner-description2">Product description</p>
+              <button class="btn-header">Buy now</button>
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-8">
+              <div class="header-banner">
+                <img id="banner-img3" src="./assets/img/image 4.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <h3 id="banner-name3">Product name</h3>
+              <p id="banner-description3">Product description</p>
+              <button class="btn-header">Buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>

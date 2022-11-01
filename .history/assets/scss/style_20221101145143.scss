@@ -1,0 +1,29 @@
+@import './bases/variables';
+
+.header {
+    .header-nav {
+        background-color: #000;
+        color: #fff;
+        .nav-items {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                padding: 5px;
+                transition: all 0.2s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    color: #F8B653;
+                }
+            }
+        }
+    }
+    .menu {
+        .menu-items {
+            a {
+                color: #000;
+                padding-right: 10px;
+            }
+        }
+    }
+}
